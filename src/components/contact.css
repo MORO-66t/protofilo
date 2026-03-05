@@ -1,0 +1,62 @@
+/* Contact Section */
+.contact {
+  background: #0f172a;
+}
+
+.contact h2 {
+  color: #f1f5f9 !important;
+}
+
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+  margin: 14px auto 0;
+  border-radius: 999px;
+}
+
+.contact .text-muted {
+  color: #94a3b8 !important;
+}
+
+/* Contact Cards */
+.contact .card.border-warning {
+  border: 1px solid rgba(6, 182, 212, 0.2) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact .card.border-warning:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.12);
+  border-color: #06b6d4 !important;
+}
+
+.contact .card .card-title {
+  color: #e2e8f0;
+}
+
+.contact .card .text-muted {
+  color: #94a3b8 !important;
+}
+
+.contact .card i {
+  transition: color 0.2s ease;
+}
+
+.contact .card .text-warning {
+  color: #06b6d4 !important;
+}
+
+.contact .card.border-warning:hover i {
+  color: #8b5cf6 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 16px;
+  }
+}

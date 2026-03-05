@@ -1,0 +1,40 @@
+/* About Section */
+.about {
+  background: #f8fafc;
+}
+
+.about-hero span {
+  color: #06b6d4;
+  font-weight: 600;
+}
+.about h2 {
+  font-size: 36px;
+  color: #0f172a;
+}
+.about h3 {
+  font-size: 22px;
+  color: #0f172a;
+}
+/* Tech badges */
+.about .badge.bg-light {
+  background: #0f172a !important;
+  color: #06b6d4 !important;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+}
+.about .card.border-warning {
+  border: 2px solid #06b6d4 !important;
+  border-radius: 16px;
+  background: #fff;
+}
+.about-hero h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+  margin: 14px auto 0;
+  border-radius: 999px;
+}

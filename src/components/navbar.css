@@ -1,0 +1,74 @@
+/* Navbar Custom Styles */
+.navbar-custom {
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
+  background: #0f172a !important;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 26px;
+  font-weight: 700;
+  color: #e2e8f0;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+.navbar-custom .navbar-brand span {
+  color: #06b6d4;
+}
+
+.navbar-custom .nav-link {
+  font-weight: 500;
+  margin-left: 8px;
+  color: #94a3b8 !important;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #06b6d4 !important;
+}
+
+/* Underline animation */
+.navbar-custom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+  transition: width 0.25s ease;
+}
+
+.navbar-custom .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.navbar-custom .btn-warning {
+  background: linear-gradient(135deg, #06b6d4, #8b5cf6) !important;
+  border: none !important;
+  color: #ffffff !important;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar-custom .btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(6, 182, 212, 0.35);
+  color: #ffffff !important;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
