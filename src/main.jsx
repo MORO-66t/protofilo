@@ -7,7 +7,7 @@ import ProjectDetails from "./components/ProjectDetails.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<BrowserRouter basename="/protofilo">
+		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<App />} />
 				<Route path="/projects/:id" element={<ProjectDetails />} />
